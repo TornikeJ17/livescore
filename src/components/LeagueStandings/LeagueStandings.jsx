@@ -2,32 +2,35 @@ import React from "react";
 import {
   Container,
   HrElement,
-  BlockOne,
+  Thead,
   BlockTwo,
   Team,
   PTS,
   LittleBlock,
   IMG,
+  Tbody,
+  Table,
+  ItemBlock,
 } from "./Styled";
 
 const LeagueStandings = ({ data }) => {
   return (
     <Container>
-      <BlockOne>
-        <LittleBlock>#</LittleBlock>
-        <Team>TEAM</Team>
-        <LittleBlock>MP</LittleBlock>
-        <LittleBlock>W</LittleBlock>
-        <LittleBlock>D</LittleBlock>
-        <LittleBlock>L</LittleBlock>
-        <LittleBlock>G</LittleBlock>
-        <PTS>PTS</PTS>
-      </BlockOne>
-      <HrElement />
-      <div>
+      <Table>
+        <Thead>
+          <LittleBlock>#</LittleBlock>
+          <Team>TEAM</Team>
+          <LittleBlock>MP</LittleBlock>
+          <LittleBlock>W</LittleBlock>
+          <LittleBlock>D</LittleBlock>
+          <LittleBlock>L</LittleBlock>
+          <LittleBlock>G</LittleBlock>
+          <PTS>PTS</PTS>
+        </Thead>
+        <HrElement />
         {data?.data?.standings?.map((item, index) => (
-          <div key={index}>
-            <BlockTwo>
+          <BlockTwo key={index}>
+            <Tbody>
               <LittleBlock>{item.stats[8].value}.</LittleBlock>
               <Team>
                 <IMG src={item.team.logos[0].href} />
@@ -41,11 +44,11 @@ const LeagueStandings = ({ data }) => {
                 {item.stats[4].value} : {item.stats[5].value}
               </LittleBlock>
               <PTS>{item.stats[6].value}</PTS>
-            </BlockTwo>
+            </Tbody>
             <HrElement />
-          </div>
+          </BlockTwo>
         ))}
-      </div>
+      </Table>
     </Container>
   );
 };

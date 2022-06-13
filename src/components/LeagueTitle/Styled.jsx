@@ -34,7 +34,7 @@ export const Title = styled.div`
 `;
 export const Season = styled.select`
   position: absolute;
-  top: 120px;
+  top: 140px;
   left: 200px;
   font-size: 13px;
   color: #c8cdcd;
@@ -47,7 +47,7 @@ export const Select = styled.select`
     width: 150px;
     position: absolute;
     left: 200px;
-    top: 90px;
+    top: 110px;
     font-size: 13px;
     color: #c8cdcd;
   }

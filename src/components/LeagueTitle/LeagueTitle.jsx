@@ -23,7 +23,9 @@ const LeagueTitle = ({ data, title, setCountry, setYear, year }) => {
       </Season>
       <Select onClick={(e) => setCountry(e.target.value)}>
         {Leagues.map((item, index) => (
-          <option value={item.id}>{item.name}</option>
+          <option key={index} value={item.id}>
+            {item.name}
+          </option>
         ))}
       </Select>
     </Container>

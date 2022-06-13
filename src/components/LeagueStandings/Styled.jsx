@@ -6,37 +6,55 @@ export const Container = styled.div`
   border-radius: 10px;
   margin-top: 1rem;
   background: ${({ theme }) => theme.blockColor};
+  overflow-x: auto;
 `;
 export const HrElement = styled.hr`
   border: 1px solid #eee;
   width: 1200px;
   max-width: 100%;
 `;
-export const BlockOne = styled.div`
+export const Table = styled.table`
+  width: 1200px;
+  max-width: 100%;
+`;
+export const Tbody = styled.tbody`
+  width: 1200px;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px;
-  font-weight: 700;
+  padding: 5px;
 `;
+export const Thead = styled.thead`
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 5px;
+  font-weight: 700;
+  width: 1180px;
+  max-width: 100%;
+`;
+export const ItemBlock = styled.div``;
+
 export const BlockTwo = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px;
+  padding: 5px;
+  flex-flow: wrap;
 `;
 
-export const Team = styled.div`
-  width: 300px;
+export const Team = styled.th`
+  width: 486px;
   max-width: 100%;
   display: flex;
   align-items: center;
 `;
-export const LittleBlock = styled.div`
-  width: 150px;
+export const LittleBlock = styled.th`
+  width: 98px;
   max-width: 100%;
 `;
-export const PTS = styled.div`
+export const PTS = styled.th`
   width: 100px;
   max-width: 100%;
   font-weight: 700;
