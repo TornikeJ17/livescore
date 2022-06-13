@@ -18,7 +18,7 @@ const LeagueTitle = ({ data, title, setCountry, setYear, year }) => {
         <option value="2015">2015</option>
         <option value="2014">2014</option>
         <option value="2013">2013</option>
-        <option value="2022">2022</option>
+        <option value="2012">2012</option>
         <option value="2011">2011</option>
       </Season>
       <Select onClick={(e) => setCountry(e.target.value)}>
