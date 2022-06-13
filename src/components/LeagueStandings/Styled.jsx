@@ -42,6 +42,8 @@ export const BlockTwo = styled.div`
   justify-content: space-evenly;
   padding: 5px;
   flex-flow: wrap;
+  width: 1180px;
+  max-width: 100%;
 `;
 
 export const Team = styled.th`
