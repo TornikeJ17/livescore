@@ -21,7 +21,7 @@ const LeagueTitle = ({ data, title, setCountry, setYear, year }) => {
         <option value="2012">2012</option>
         <option value="2011">2011</option>
       </Season>
-      <Select onClick={(e) => setCountry(e.target.value)}>
+      <Select onChange={(e) => setCountry(e.target.value)}>
         {Leagues.map((item, index) => (
           <option key={index} value={item.id}>
             {item.name}
