@@ -6,7 +6,7 @@ const League = ({ setData, setTitle, setCountry }) => {
     <Container>
       <Title>LEAGUES</Title>
       {Leagues.map((item, index) => (
-        <Block key={index} onChange={() => setCountry(item.id)}>
+        <Block key={index} onClick={() => setCountry(item.id)}>
           <IMG src={item.image} />
           <LeagueName>{item.name}</LeagueName>
         </Block>
